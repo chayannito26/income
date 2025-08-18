@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "source": "Registration Fee",
+        "amount": 1300,
+        "date": "2025-08-17",
+        "type": "Registration",
+        "comments": "Given for website",
+        "clients": ["Arian Mollik Wasi"]
+    },
+    {
+        "id": 2,
+        "source": "Registration Fee",
+        "amount": 1250,
+        "date": "2025-08-18",
+        "type": "Registration",
+        "comments": "",
+        "clients": ["Afiya Rubaiyah"]
+    },
+    {
+        "id": 3,
+        "source": "Registration Fee",
+        "amount": 1250,
+        "date": "2025-08-18",
+        "type": "Registration",
+        "comments": "",
+        "clients": ["S Shanta"]
+    },
+    {
+        "id": 4,
+        "source": "Registration Fee",
+        "amount": 1200,
+        "date": "2025-08-18",
+        "type": "Registration",
+        "comments": "",
+        "clients": ["Marzia Mittika"]
+    },
+    {
+        "id": 5,
+        "source": "Loan from Yeasir Arafate",
+        "amount": 2500,
+        "date": "2025-08-18",
+        "type": "Loan",
+        "comments": "Will be given back upon more registration",
+        "clients": ["Yeasir Arafate"]
+    }
+]

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rag Day Revenue Tracker</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Tailwind's gray-50 */
+        }
+        /* Style for the scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9; /* gray-100 */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; /* gray-300 */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; /* gray-400 */
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <!-- Main Container -->
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- Header -->
+        <header class="mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900">Rag Day Revenue Tracker</h1>
+            <p class="text-gray-600 mt-1">A central place to monitor all rag day related income.</p>
+        </header>
+
+        <!-- Controls: Search and Filters -->
+        <div class="bg-white p-4 rounded-xl shadow-sm mb-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Search Bar -->
+                <div class="lg:col-span-1">
+                    <label for="search" class="block text-sm font-medium text-gray-700 mb-1">Search</label>
+                    <input type="text" id="search" placeholder="Search by source, comments..." class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
+                </div>
+                
+                <!-- Filter by Type -->
+                <div>
+                    <label for="filter-type" class="block text-sm font-medium text-gray-700 mb-1">Category</label>
+                    <select id="filter-type" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
+                        <option value="all">All Categories</option>
+                        <!-- Options will be populated by JS -->
+                    </select>
+                </div>
+
+                <!-- Filter by Client -->
+                <div>
+                    <label for="filter-client" class="block text-sm font-medium text-gray-700 mb-1">Source</label>
+                    <select id="filter-client" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
+                        <option value="all">All Sources</option>
+                        <!-- Options will be populated by JS -->
+                    </select>
+                </div>
+
+                <!-- Date Range Filter -->
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Date Range</label>
+                    <div class="flex space-x-2">
+                        <input type="date" id="filter-date-start" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
+                        <input type="date" id="filter-date-end" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Revenue Table / List -->
+        <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm text-left text-gray-500">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-100">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">Source / Details</th>
+                            <th scope="col" class="px-6 py-3 hidden md:table-cell">Clients</th>
+                            <th scope="col" class="px-6 py-3 hidden lg:table-cell">Date</th>
+                            <th scope="col" class="px-6 py-3 hidden sm:table-cell">Category</th>
+                            <th scope="col" class="px-6 py-3 text-right">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody id="revenue-table-body">
+                         <tr>
+                            <td colspan="5" class="text-center p-8 text-gray-500">
+                                Loading revenue data...
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot class="bg-gray-100 font-semibold text-gray-900">
+                        <tr>
+                            <td class="px-6 py-4 text-right" colspan="4">Total Revenue</td>
+                            <td id="total-revenue" class="px-6 py-4 text-right">৳0</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                 <div id="no-results" class="text-center py-12 text-gray-500 hidden">
+                    <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m-9 1V7a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2z" />
+                    </svg>
+                    <h3 class="mt-2 text-sm font-medium text-gray-900">No revenue found</h3>
+                    <p class="mt-1 text-sm text-gray-500">Try adjusting your search or filter criteria.</p>
+                  </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main JavaScript Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- GLOBAL STATE ---
+            let revenues = [];
+            
+            // --- BACKUP DATA ---
+            const backupRevenues = [
+                {
+                    "id": 1, "source": "Phase 1 Payment (Backup)", "amount": 50000, "date": "2025-08-15", "type": "Project Milestone",
+                    "comments": "Initial payment upon project commencement.",
+                    "clients": ["Innovate Corp"]
+                },
+                {
+                    "id": 2, "source": "Consulting Services", "amount": 15000, "date": "2025-08-10", "type": "Consulting",
+                    "comments": "Hourly consulting for Q3.",
+                    "clients": ["Tech Solutions Ltd.", "Global Web Services"]
+                },
+                {
+                    "id": 3, "source": "Asset Sale", "amount": 8500, "date": "2025-08-05", "type": "Sales",
+                    "comments": "Sale of unused design assets.",
+                    "clients": ["Design Hub"]
+                }
+            ];
+
+            // --- DOM ELEMENTS ---
+            const tableBody = document.getElementById('revenue-table-body');
+            const totalRevenueEl = document.getElementById('total-revenue');
+            const searchInput = document.getElementById('search');
+            const typeFilter = document.getElementById('filter-type');
+            const clientFilter = document.getElementById('filter-client');
+            const dateStartFilter = document.getElementById('filter-date-start');
+            const dateEndFilter = document.getElementById('filter-date-end');
+            const noResultsDiv = document.getElementById('no-results');
+
+            /**
+             * Fetches revenue data from the external JSON file, with a fallback.
+             */
+            async function fetchRevenues() {
+                try {
+                    const response = await fetch('revenues.json');
+                    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+                    revenues = await response.json();
+                    console.log("Successfully loaded revenues from revenues.json");
+                    initializeApp();
+                } catch (error) {
+                    console.warn("Could not load revenues.json. Using backup data.", error);
+                    revenues = backupRevenues;
+                    initializeApp();
+                }
+            }
+
+            /**
+             * Initializes the application after data is ready.
+             */
+            function initializeApp() {
+                // Populate client filter
+                const clients = [...new Set(revenues.flatMap(r => r.clients))].sort();
+                clients.forEach(client => {
+                    const option = document.createElement('option');
+                    option.value = client;
+                    option.textContent = client;
+                    clientFilter.appendChild(option);
+                });
+
+                // Populate category filter dynamically
+                const categories = [...new Set(revenues.map(r => r.type))].sort();
+                categories.forEach(category => {
+                    const option = document.createElement('option');
+                    option.value = category;
+                    option.textContent = category;
+                    typeFilter.appendChild(option);
+                });
+
+                renderTable(revenues);
+
+                [searchInput, typeFilter, clientFilter, dateStartFilter, dateEndFilter].forEach(el => {
+                    el.addEventListener('input', applyFilters);
+                    el.addEventListener('change', applyFilters);
+                });
+            }
+
+            /**
+             * Applies all active filters and re-renders the table.
+             */
+            function applyFilters() {
+                let filteredRevenues = [...revenues];
+                const searchTerm = searchInput.value.toLowerCase().trim();
+                const type = typeFilter.value;
+                const client = clientFilter.value;
+                const startDate = dateStartFilter.value;
+                const endDate = dateEndFilter.value;
+
+                if (searchTerm) {
+                    filteredRevenues = filteredRevenues.filter(r => 
+                        r.source.toLowerCase().includes(searchTerm) || 
+                        r.comments.toLowerCase().includes(searchTerm)
+                    );
+                }
+                if (type !== 'all') {
+                    filteredRevenues = filteredRevenues.filter(r => r.type === type);
+                }
+                if (client !== 'all') {
+                    filteredRevenues = filteredRevenues.filter(r => r.clients.includes(client));
+                }
+                if (startDate) {
+                    filteredRevenues = filteredRevenues.filter(r => r.date >= startDate);
+                }
+                if (endDate) {
+                    filteredRevenues = filteredRevenues.filter(r => r.date <= endDate);
+                }
+
+                renderTable(filteredRevenues);
+            }
+
+            /**
+             * Renders the revenue data into the table.
+             */
+            function renderTable(data) {
+                tableBody.innerHTML = ''; 
+
+                if (data.length === 0) {
+                    noResultsDiv.classList.remove('hidden');
+                    totalRevenueEl.textContent = formatCurrency(0);
+                    return;
+                }
+                
+                noResultsDiv.classList.add('hidden');
+
+                let total = 0;
+                data.forEach(revenue => {
+                    total += revenue.amount;
+                    const row = document.createElement('tr');
+                    row.className = 'bg-white border-b hover:bg-gray-50';
+                    
+                    const badgeClass = getCategoryColor(revenue.type);
+
+                    row.innerHTML = `
+                        <td class="px-6 py-4">
+                            <div class="font-semibold text-gray-900">${revenue.source}</div>
+                            <div class="text-xs text-gray-500">${revenue.comments}</div>
+                            <div class="mt-2 text-xs text-gray-500 md:hidden">
+                                <span>${revenue.clients.join(', ')}</span> &bull; <span>${formatDate(revenue.date)}</span>
+                            </div>
+                        </td>
+                        <td class="px-6 py-4 hidden md:table-cell">${revenue.clients.join(', ')}</td>
+                        <td class="px-6 py-4 hidden lg:table-cell">${formatDate(revenue.date)}</td>
+                        <td class="px-6 py-4 hidden sm:table-cell">
+                            <span class="px-2 py-1 text-xs font-medium rounded-full ${badgeClass}">
+                                ${revenue.type}
+                            </span>
+                        </td>
+                        <td class="px-6 py-4 text-right font-medium text-gray-900">${formatCurrency(revenue.amount)}</td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+
+                totalRevenueEl.textContent = formatCurrency(total);
+            }
+
+            /**
+             * Dynamically assigns a color badge to a category.
+             */
+             function getCategoryColor(category) {
+                const categoryColors = {
+                    loan: "bg-red-100 text-red-800",
+                    registration: "bg-blue-100 text-blue-800",
+                    sponsor: "bg-green-100 text-green-800"
+                };
+
+                // fallback color if category not found
+                return categoryColors[category.toLowerCase()] || "bg-gray-100 text-gray-800";
+            }
+
+            /**
+             * Formats a number as BDT currency, rounded to the nearest whole number.
+             */
+            function formatCurrency(amount) {
+                const roundedAmount = Math.round(amount);
+                return new Intl.NumberFormat('en-IN', {
+                    style: 'currency',
+                    currency: 'BDT',
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 0,
+                }).format(roundedAmount).replace('BDT', '৳');
+            }
+
+            function formatDate(dateString) {
+                const date = new Date(dateString + 'T00:00:00');
+                return new Intl.DateTimeFormat('en-GB', { month: 'short', day: 'numeric', year: 'numeric' }).format(date);
+            }
+
+            // --- START THE APP ---
+            fetchRevenues();
+        });
+    </script>
+
+</body>
+</html>
