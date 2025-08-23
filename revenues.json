@@ -42,5 +42,16 @@
         "clients": [
             "Yeasir Arafate"
         ]
+    },
+    {
+        "id": 1755946514423,
+        "source": "Loan from Arian Mollik Wasi",
+        "amount": 5000,
+        "date": "2025-08-23",
+        "type": "Loan",
+        "clients": [
+            "Arian Mollik Wasi"
+        ],
+        "comments": "Will be given back upon more registration"
     }
 ]
