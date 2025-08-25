@@ -11,23 +11,12 @@
         "comments": "Given for website"
     },
     {
-        "id": 2,
-        "source": "Registration Fee",
-        "amount": 1250,
-        "date": "2025-08-18",
-        "type": "Registration",
-        "comments": "",
-        "clients": [
-            "Afiya Rubaiyah"
-        ]
-    },
-    {
         "id": 3,
         "source": "Registration Fee",
-        "amount": 1250,
+        "amount": 2500,
         "date": "2025-08-18",
         "type": "Registration",
-        "comments": "",
+        "comments": "For 2 person",
         "clients": [
             "S Shanta"
         ]

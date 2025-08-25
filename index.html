@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rag Day Revenue Tracker</title>
-    
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+
+    <!-- Flatpickr (Date Range Picker) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
     <!-- Custom Styles -->
     <style>
         body {
@@ -48,37 +52,75 @@
 
         <!-- Controls: Search and Filters -->
         <div class="bg-white p-4 rounded-xl shadow-sm mb-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
                 <!-- Search Bar -->
                 <div class="lg:col-span-1">
                     <label for="search" class="block text-sm font-medium text-gray-700 mb-1">Search</label>
                     <input type="text" id="search" placeholder="Search by source, comments..." class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
                 </div>
-                
-                <!-- Filter by Type -->
+
+                <!-- Filter by Type (Custom Select) -->
                 <div>
                     <label for="filter-type" class="block text-sm font-medium text-gray-700 mb-1">Category</label>
-                    <select id="filter-type" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
-                        <option value="all">All Categories</option>
-                        <!-- Options will be populated by JS -->
-                    </select>
+                    <div class="relative" data-select="filter-type">
+                        <input type="hidden" id="filter-type" value="all">
+                        <button type="button" data-select-trigger class="w-full px-3 py-2 border border-gray-300 rounded-lg bg-white hover:bg-gray-50 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition flex items-center justify-between">
+                            <span class="flex items-center gap-2" data-select-label>
+                                <span class="inline-block h-2.5 w-2.5 rounded-full bg-gray-300"></span>
+                                All Categories
+                            </span>
+                            <svg class="h-4 w-4 text-gray-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.25a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div data-select-panel class="absolute left-0 right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg p-1 z-20 hidden">
+                            <ul class="py-1" data-select-options></ul>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Filter by Client -->
+                <!-- Filter by Client (Custom Select) -->
                 <div>
                     <label for="filter-client" class="block text-sm font-medium text-gray-700 mb-1">Source</label>
-                    <select id="filter-client" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
-                        <option value="all">All Sources</option>
-                        <!-- Options will be populated by JS -->
-                    </select>
+                    <div class="relative" data-select="filter-client">
+                        <input type="hidden" id="filter-client" value="all">
+                        <button type="button" data-select-trigger class="w-full px-3 py-2 border border-gray-300 rounded-lg bg-white hover:bg-gray-50 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition flex items-center justify-between">
+                            <span class="flex items-center gap-2" data-select-label>All Sources</span>
+                            <svg class="h-4 w-4 text-gray-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.25a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div data-select-panel class="absolute left-0 right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg p-1 z-20 hidden">
+                            <ul class="py-1" data-select-options></ul>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Date Range Filter -->
+                <!-- Date Range Filter (single element) -->
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-1">Date Range</label>
-                    <div class="flex space-x-2">
-                        <input type="date" id="filter-date-start" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
-                        <input type="date" id="filter-date-end" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
+                    <input
+                        type="text"
+                        id="filter-date-range"
+                        placeholder="Select date range"
+                        class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"
+                    />
+                </div>
+
+                <!-- Sort (Custom Select) -->
+                <div>
+                    <label for="sort-by" class="block text-sm font-medium text-gray-700 mb-1">Sort</label>
+                    <div class="relative" data-select="sort-by">
+                        <input type="hidden" id="sort-by" value="date_desc">
+                        <button type="button" data-select-trigger class="w-full px-3 py-2 border border-gray-300 rounded-lg bg-white hover:bg-gray-50 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition flex items-center justify-between">
+                            <span data-select-label>Date (Newest first)</span>
+                            <svg class="h-4 w-4 text-gray-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.25a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div data-select-panel class="absolute left-0 right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg p-1 z-20 hidden">
+                            <ul class="py-1" data-select-options></ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -121,13 +163,15 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Main JavaScript Logic -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             // --- GLOBAL STATE ---
             let revenues = [];
-            
+            // Keep normalized YYYY-MM-DD dates from the range picker
+            let dateRange = { start: '', end: '' };
+
             // --- BACKUP DATA ---
             const backupRevenues = [
                 {
@@ -151,11 +195,188 @@
             const tableBody = document.getElementById('revenue-table-body');
             const totalRevenueEl = document.getElementById('total-revenue');
             const searchInput = document.getElementById('search');
-            const typeFilter = document.getElementById('filter-type');
-            const clientFilter = document.getElementById('filter-client');
-            const dateStartFilter = document.getElementById('filter-date-start');
-            const dateEndFilter = document.getElementById('filter-date-end');
+            const typeFilter = document.getElementById('filter-type');      // hidden input
+            const clientFilter = document.getElementById('filter-client');  // hidden input
+            const dateRangeFilter = document.getElementById('filter-date-range');
             const noResultsDiv = document.getElementById('no-results');
+            const sortSelect = document.getElementById('sort-by');          // hidden input
+
+            const sortOptions = [
+                { value: 'date_desc',   label: 'Date (Newest)' },
+                { value: 'date_asc',    label: 'Date (Oldest)' },
+                { value: 'amount_desc', label: 'Amount (High → Low)' },
+                { value: 'amount_asc',  label: 'Amount (Low → High)' },
+                { value: 'source_asc',  label: 'Source (A→Z)' },
+                { value: 'source_desc', label: 'Source (Z→A)' }
+            ];
+
+            // === Custom Select Helpers ===
+            function getCategoryDotClass(category) {
+                const map = {
+                    loan: 'bg-red-500',
+                    registration: 'bg-blue-500',
+                    sponsor: 'bg-green-500'
+                };
+                return map[String(category || '').toLowerCase()] || 'bg-gray-400';
+            }
+
+            function sortIconHTML(value) {
+                const iconCls = 'h-4 w-4 text-gray-500';
+                switch (value) {
+                    case 'date_desc':
+                        return `<svg class="${iconCls}" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1z"/><path d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9z"/><path d="M12.75 12.5a.75.75 0 00-1.5 0v3.25a.75.75 0 001.5 0V12.5z"/></svg>`;
+                    case 'date_asc':
+                        return `<svg class="${iconCls}" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1z"/><path d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9z"/><path d="M7.25 15.75a.75.75 0 001.5 0v-3.25a.75.75 0 00-1.5 0v3.25z"/></svg>`;
+                    case 'amount_desc':
+                        return `<svg class="${iconCls}" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 2a1 1 0 011 1v1.06c1.676.196 3 .98 3 2.64 0 1.87-1.69 2.6-3.72 3.12-1.86.47-2.78.83-2.78 1.58 0 .63.63 1.06 1.88 1.06 1.02 0 1.98-.25 2.67-.7a1 1 0 111.1 1.66A6.2 6.2 0 0111 14.94V16a1 1 0 11-2 0v-1.06C7.324 14.744 6 13.96 6 12.3c0-1.88 1.7-2.62 3.72-3.14 1.86-.47 2.78-.82 2.78-1.56 0-.66-.66-1.08-1.92-1.08-1 0-1.93.26-2.61.72a1 1 0 11-1.12-1.66A6.22 6.22 0 019 4.06V3a1 1 0 011-1z"/><path d="M14.75 11a.75.75 0 10-1.5 0v4.75a.75.75 0 001.5 0V11z"/></svg>`;
+                    case 'amount_asc':
+                        return `<svg class="${iconCls}" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 2a1 1 0 011 1v1.06c1.676.196 3 .98 3 2.64 0 1.87-1.69 2.6-3.72 3.12-1.86.47-2.78.83-2.78 1.58 0 .63.63 1.06 1.88 1.06 1.02 0 1.98-.25 2.67-.7a1 1 0 111.1 1.66A6.2 6.2 0 0111 14.94V16a1 1 0 11-2 0v-1.06C7.324 14.744 6 13.96 6 12.3c0-1.88 1.7-2.62 3.72-3.14 1.86-.47 2.78-.82 2.78-1.56 0-.66-.66-1.08-1.92-1.08-1 0-1.93.26-2.61.72a1 1 0 11-1.12-1.66A6.22 6.22 0 019 4.06V3a1 1 0 011-1z"/><path d="M5.25 15.75a.75.75 0 001.5 0V11a.75.75 0 00-1.5 0v4.75z"/></svg>`;
+                    case 'source_asc':
+                        return `<svg class="${iconCls}" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M5 5h10v2H5zM5 9h8v2H5zM5 13h6v2H5z"/></svg>`;
+                    case 'source_desc':
+                        return `<svg class="${iconCls}" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M5 5h6v2H5zM5 9h8v2H5zM5 13h10v2H5z"/></svg>`;
+                    default:
+                        return '';
+                }
+            }
+
+            // New: sanitize person name to jpg filename (spaces -> underscores, strip unsafe)
+            function nameToImageFile(name) {
+                return (
+                    "./people/"
+                    +String(name || '')
+                        .normalize('NFKD')
+                        .replace(/[\u0300-\u036f]/g, '')     // strip diacritics
+                        .trim()
+                        .replace(/\s+/g, '_')                // spaces -> underscores
+                        .replace(/[^A-Za-z0-9._-]/g, '_')    // other unsafe -> underscore
+                    + '.png'
+                );
+            }
+
+            function clientAvatarHTML(name) {
+                if (!name || name === 'all') {
+                    return `<svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 10a4 4 0 100-8 4 4 0 000 8z"/><path fill-rule="evenodd" d="M.458 16.042A9.956 9.956 0 0110 12c3.038 0 5.78 1.354 7.542 3.542A.75.75 0 0116.94 17H3.06a.75.75 0 01-.602-1.208z" clip-rule="evenodd"/></svg>`;
+                }
+                const file = nameToImageFile(name);
+                return `
+                  <span class="relative inline-flex h-5 w-5">
+                    <img src="${file}" alt="${name}" class="h-5 w-5 rounded-full object-cover ring-1 ring-gray-200"
+                         onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');">
+                    <span class="hidden inline-flex h-5 w-5 rounded-full bg-gray-200 text-gray-500 items-center justify-center">
+                        <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 10a4 4 0 100-8 4 4 0 000 8z"/><path fill-rule="evenodd" d="M.458 16.042A9.956 9.956 0 0110 12c3.038 0 5.78 1.354 7.542 3.542A.75.75 0 0116.94 17H3.06a.75.75 0 01-.602-1.208z" clip-rule="evenodd"/></svg>
+                    </span>
+                  </span>
+                `;
+            }
+
+            // New: render client chips (avatar + name)
+            function renderClientChips(clients = []) {
+                return clients.map(name => `
+                    <span class="inline-flex items-center gap-1 rounded-full bg-gray-100 px-2 py-0.5 text-xs text-gray-700 ring-1 ring-gray-200">
+                        ${clientAvatarHTML(name)}
+                        <span class="leading-none">${name}</span>
+                    </span>
+                `).join('');
+            }
+
+            function initCustomSelect({ inputId, options, mode = 'default' }) {
+                const container = document.querySelector(`[data-select="${inputId}"]`);
+                if (!container) return;
+                const hiddenInput = document.getElementById(inputId);
+                const trigger = container.querySelector('[data-select-trigger]');
+                const labelEl = container.querySelector('[data-select-label]');
+                const panel = container.querySelector('[data-select-panel]');
+                const list = container.querySelector('[data-select-options]');
+
+                // Determine selectedValue robustly (fix: no per-item defaulting)
+                const selectedValue = options.some(o => o.value === hiddenInput.value)
+                    ? hiddenInput.value
+                    : (options[0]?.value ?? '');
+
+                // Render options
+                list.innerHTML = '';
+                options.forEach(opt => {
+                    const isSelected = selectedValue === opt.value;
+                    const leftContent = (() => {
+                        if (mode === 'category') {
+                            const dot = opt.value !== 'all'
+                                ? `<span class="inline-block h-2.5 w-2.5 rounded-full ${getCategoryDotClass(opt.value)}"></span>`
+                                : `<span class="inline-block h-2.5 w-2.5 rounded-full bg-gray-300"></span>`;
+                            return `<span class="flex items-center gap-2">${dot}<span>${opt.label}</span></span>`;
+                        }
+                        if (mode === 'client') {
+                            return `<span class="flex items-center gap-2">${clientAvatarHTML(opt.value)}<span>${opt.label}</span></span>`;
+                        }
+                        if (mode === 'sort') {
+                            return `<span class="flex items-center gap-2">${sortIconHTML(opt.value)}<span>${opt.label}</span></span>`;
+                        }
+                        return `<span>${opt.label}</span>`;
+                    })();
+
+                    const li = document.createElement('li');
+                    li.innerHTML = `
+                        <button type="button" data-value="${opt.value}"
+                            class="w-full px-3 py-2 text-left flex items-center justify-between hover:bg-gray-50 rounded-md ${isSelected ? 'bg-gray-100' : ''}">
+                            ${leftContent}
+                            ${isSelected ? '<svg class="h-4 w-4 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 5.29a1 1 0 010 1.415l-7.2 7.2a1 1 0 01-1.415 0l-3-3a1 1 0 011.415-1.415l2.293 2.293 6.493-6.493a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>' : ''}
+                        </button>
+                    `;
+                    list.appendChild(li);
+                });
+
+                // Update trigger label
+                const selected = options.find(o => o.value === selectedValue) || options[0];
+                if (selected) {
+                    if (mode === 'category') {
+                        if (selected.value !== 'all') {
+                            labelEl.innerHTML = `<span class="flex items-center gap-2"><span class="inline-block h-2.5 w-2.5 rounded-full ${getCategoryDotClass(selected.value)}"></span><span>${selected.label}</span></span>`;
+                        } else {
+                            labelEl.innerHTML = `<span class="flex items-center gap-2"><span class="inline-block h-2.5 w-2.5 rounded-full bg-gray-300"></span><span>${selected.label}</span></span>`;
+                        }
+                    } else if (mode === 'client') {
+                        labelEl.innerHTML = `<span class="flex items-center gap-2">${clientAvatarHTML(selected.value)}<span>${selected.label}</span></span>`;
+                    } else if (mode === 'sort') {
+                        labelEl.innerHTML = `<span class="flex items-center gap-2">${sortIconHTML(selected.value)}<span>${selected.label}</span></span>`;
+                    } else {
+                        labelEl.textContent = selected.label;
+                    }
+                }
+
+                // Interactions (bind once)
+                if (!trigger.dataset.bound) {
+                    trigger.addEventListener('click', () => {
+                        document.querySelectorAll('[data-select-panel]').forEach(p => {
+                            if (p !== panel) p.classList.add('hidden');
+                        });
+                        panel.classList.toggle('hidden');
+                    });
+                    trigger.dataset.bound = '1';
+                }
+
+                list.onclick = (e) => {
+                    const btn = e.target.closest('button[data-value]');
+                    if (!btn) return;
+                    const newValue = btn.getAttribute('data-value');
+                    if (hiddenInput.value !== newValue) {
+                        hiddenInput.value = newValue;
+                        hiddenInput.dispatchEvent(new Event('input', { bubbles: true }));
+                    }
+                    panel.classList.add('hidden');
+                    // Repaint to refresh checkmark and label
+                    initCustomSelect({ inputId, options, mode });
+                };
+            }
+
+            // Close on outside click
+            document.addEventListener('click', (e) => {
+                document.querySelectorAll('[data-select]').forEach(container => {
+                    if (!container.contains(e.target)) {
+                        const panel = container.querySelector('[data-select-panel]');
+                        panel && panel.classList.add('hidden');
+                    }
+                });
+            });
 
             /**
              * Fetches revenue data from the external JSON file, with a fallback.
@@ -178,30 +399,51 @@
              * Initializes the application after data is ready.
              */
             function initializeApp() {
-                // Populate client filter
+                // Build options for custom selects instead of native <select>s
                 const clients = [...new Set(revenues.flatMap(r => r.clients))].sort();
-                clients.forEach(client => {
-                    const option = document.createElement('option');
-                    option.value = client;
-                    option.textContent = client;
-                    clientFilter.appendChild(option);
-                });
-
-                // Populate category filter dynamically
                 const categories = [...new Set(revenues.map(r => r.type))].sort();
-                categories.forEach(category => {
-                    const option = document.createElement('option');
-                    option.value = category;
-                    option.textContent = category;
-                    typeFilter.appendChild(option);
-                });
 
-                renderTable(revenues);
+                const clientOptions = [{ value: 'all', label: 'All Sources' }, ...clients.map(c => ({ value: c, label: c }))];
+                const categoryOptions = [{ value: 'all', label: 'All Categories' }, ...categories.map(c => ({ value: c, label: c }))];
 
-                [searchInput, typeFilter, clientFilter, dateStartFilter, dateEndFilter].forEach(el => {
+                // Initialize custom selects
+                initCustomSelect({ inputId: 'filter-client', options: clientOptions, mode: 'client' });
+                initCustomSelect({ inputId: 'filter-type', options: categoryOptions, mode: 'category' });
+                initCustomSelect({ inputId: 'sort-by', options: sortOptions, mode: 'sort' });
+
+                // Initialize Flatpickr range picker
+                if (window.flatpickr && dateRangeFilter) {
+                    flatpickr(dateRangeFilter, {
+                        mode: 'range',
+                        dateFormat: 'Y-m-d',
+                        altInput: true,
+                        altFormat: 'M j, Y',
+                        allowInput: true,
+                        onChange: (selectedDates, _dateStr, instance) => {
+                            if (selectedDates.length === 2) {
+                                dateRange.start = instance.formatDate(selectedDates[0], 'Y-m-d');
+                                dateRange.end = instance.formatDate(selectedDates[1], 'Y-m-d');
+                            } else if (selectedDates.length === 1) {
+                                dateRange.start = instance.formatDate(selectedDates[0], 'Y-m-d');
+                                dateRange.end = '';
+                            } else {
+                                dateRange.start = '';
+                                dateRange.end = '';
+                            }
+                            applyFilters();
+                        }
+                    });
+                }
+
+                // Wire up filters + sort
+                [searchInput, typeFilter, clientFilter, dateRangeFilter, sortSelect].forEach(el => {
+                    if (!el) return;
                     el.addEventListener('input', applyFilters);
                     el.addEventListener('change', applyFilters);
                 });
+
+                // Initial render
+                applyFilters();
             }
 
             /**
@@ -212,12 +454,12 @@
                 const searchTerm = searchInput.value.toLowerCase().trim();
                 const type = typeFilter.value;
                 const client = clientFilter.value;
-                const startDate = dateStartFilter.value;
-                const endDate = dateEndFilter.value;
+                const startDate = dateRange.start;
+                const endDate = dateRange.end;
 
                 if (searchTerm) {
-                    filteredRevenues = filteredRevenues.filter(r => 
-                        r.source.toLowerCase().includes(searchTerm) || 
+                    filteredRevenues = filteredRevenues.filter(r =>
+                        r.source.toLowerCase().includes(searchTerm) ||
                         r.comments.toLowerCase().includes(searchTerm)
                     );
                 }
@@ -234,21 +476,45 @@
                     filteredRevenues = filteredRevenues.filter(r => r.date <= endDate);
                 }
 
+                // Apply sort
+                filteredRevenues = applySort(filteredRevenues, sortSelect.value);
+
                 renderTable(filteredRevenues);
+            }
+
+            // NEW: sorting helper
+            function applySort(data, sortKey) {
+                const arr = [...data];
+                switch (sortKey) {
+                    case 'date_desc':
+                        return arr.sort((a, b) => b.date.localeCompare(a.date));
+                    case 'date_asc':
+                        return arr.sort((a, b) => a.date.localeCompare(b.date));
+                    case 'amount_desc':
+                        return arr.sort((a, b) => b.amount - a.amount);
+                    case 'amount_asc':
+                        return arr.sort((a, b) => a.amount - b.amount);
+                    case 'source_asc':
+                        return arr.sort((a, b) => a.source.localeCompare(b.source));
+                    case 'source_desc':
+                        return arr.sort((a, b) => b.source.localeCompare(a.source));
+                    default:
+                        return arr;
+                }
             }
 
             /**
              * Renders the revenue data into the table.
              */
             function renderTable(data) {
-                tableBody.innerHTML = ''; 
+                tableBody.innerHTML = '';
 
                 if (data.length === 0) {
                     noResultsDiv.classList.remove('hidden');
                     totalRevenueEl.textContent = formatCurrency(0);
                     return;
                 }
-                
+
                 noResultsDiv.classList.add('hidden');
 
                 let total = 0;
@@ -256,7 +522,7 @@
                     total += revenue.amount;
                     const row = document.createElement('tr');
                     row.className = 'bg-white border-b hover:bg-gray-50';
-                    
+
                     const badgeClass = getCategoryColor(revenue.type);
 
                     row.innerHTML = `
@@ -264,10 +530,15 @@
                             <div class="font-semibold text-gray-900">${revenue.source}</div>
                             <div class="text-xs text-gray-500">${revenue.comments}</div>
                             <div class="mt-2 text-xs text-gray-500 md:hidden">
-                                <span>${revenue.clients.join(', ')}</span> &bull; <span>${formatDate(revenue.date)}</span>
+                                <span class="inline-flex flex-wrap gap-1 align-middle">${renderClientChips(revenue.clients)}</span>
+                                &bull; <span>${formatDate(revenue.date)}</span>
                             </div>
                         </td>
-                        <td class="px-6 py-4 hidden md:table-cell">${revenue.clients.join(', ')}</td>
+                        <td class="px-6 py-4 hidden md:table-cell">
+                            <div class="flex flex-wrap gap-1">
+                                ${renderClientChips(revenue.clients)}
+                            </div>
+                        </td>
                         <td class="px-6 py-4 hidden lg:table-cell">${formatDate(revenue.date)}</td>
                         <td class="px-6 py-4 hidden sm:table-cell">
                             <span class="px-2 py-1 text-xs font-medium rounded-full ${badgeClass}">
