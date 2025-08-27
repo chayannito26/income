@@ -58,6 +58,12 @@
 
         /* Mobile-specific styles for full width layout */
         @media (max-width: 640px) {
+            /* Remove default body margins on mobile for true full width */
+            body {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+            
             /* Remove all horizontal padding from main container on mobile */
             .mobile-container {
                 padding-left: 0px !important;
