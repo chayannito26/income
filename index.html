@@ -56,6 +56,20 @@
             background: #94a3b8; /* gray-400 */
         }
 
+        /* Essential Tailwind CSS fallbacks for blocked CDN */
+        .w-full { width: 100%; }
+        .px-0 { padding-left: 0; padding-right: 0; }
+        .py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+        .px-4 { padding-left: 1rem; padding-right: 1rem; }
+        .mx-4 { margin-left: 1rem; margin-right: 1rem; }
+        .mb-6 { margin-bottom: 1.5rem; }
+        .mb-8 { margin-bottom: 2rem; }
+        .overflow-x-auto { overflow-x: auto; }
+        .overflow-hidden { overflow: hidden; }
+        .bg-white { background-color: #ffffff; }
+        .shadow-sm { box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); }
+        .rounded-xl { border-radius: 0.75rem; }
+
         /* Ultra-aggressive mobile-specific styles for full width table */
         @media (max-width: 640px) {
             .mobile-container {
@@ -63,6 +77,19 @@
                 padding-right: 0px !important;
                 padding-top: 16px !important;
                 padding-bottom: 16px !important;
+            }
+
+            /* Remove horizontal margins from controls on mobile */
+            .mx-4 {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+
+            /* Make controls section full width */
+            .mobile-controls {
+                border-radius: 0 !important;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
             }
 
             .mobile-table-cell {
@@ -79,6 +106,12 @@
                 margin-left: 0px !important;
                 margin-right: 0px !important;
                 border-radius: 0 !important;
+                width: 100vw !important;
+                position: relative;
+                left: 50%;
+                right: 50%;
+                margin-left: -50vw !important;
+                margin-right: -50vw !important;
             }
 
             /* Make table more compact on mobile */
@@ -128,7 +161,7 @@
         </header>
 
         <!-- Controls: Search and Filters -->
-        <div class="bg-white p-4 rounded-xl shadow-sm mb-6 mx-4 sm:mx-0">
+        <div class="bg-white p-4 rounded-xl shadow-sm mb-6 mx-4 sm:mx-0 mobile-controls">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
                 <!-- Search Bar -->
                 <div class="lg:col-span-1">
