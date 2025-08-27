@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rag Day Revenue Tracker</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="A central place to monitor all rag day related income.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Chayannito 26 Rag Day Revenue Tracker">
+    <meta property="og:description" content="A central place to monitor all rag day related income">
+    <meta property="og:image" content="https://chayannito26.com/income/image.jpg">
+    <meta property="og:url" content="https://chayannito26.com/income">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Chayannito 26 Rag Day Revenue Tracker">
+    <meta property="og:brand" content="Chayannito 26">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Chayannito 26 Rag Day Revenue Tracker">
+    <meta name="twitter:description" content="A central place to monitor all rag day related income">
+    <meta name="twitter:image" content="https://chayannito26.com/income/image.jpg">
+    <meta name="twitter:site" content="@chayannito26">
+    <meta name="twitter:creator" content="@wasi_master">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -37,7 +55,7 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #94a3b8; /* gray-400 */
         }
-        
+
         /* Ultra-aggressive mobile-specific styles for full width table */
         @media (max-width: 640px) {
             .mobile-container {
@@ -46,51 +64,51 @@
                 padding-top: 16px !important;
                 padding-bottom: 16px !important;
             }
-            
+
             .mobile-table-cell {
                 padding-left: 4px !important;
                 padding-right: 4px !important;
             }
-            
+
             .mobile-loading-cell {
                 padding: 8px !important;
             }
-            
+
             /* Ensure table wrapper extends to screen edges */
             .mobile-table-wrapper {
                 margin-left: 0px !important;
                 margin-right: 0px !important;
                 border-radius: 0 !important;
             }
-            
+
             /* Make table more compact on mobile */
             .mobile-table-font {
                 font-size: 0.8rem !important; /* 13px */
             }
-            
+
             /* Reduce header font size */
             .mobile-table-header {
                 font-size: 0.7rem !important; /* 11px */
                 padding-top: 6px !important;
                 padding-bottom: 6px !important;
             }
-            
+
             /* Hide some columns on very small screens */
             .mobile-hide-source {
                 display: none !important;
             }
-            
+
             /* Make amount column narrower */
             .mobile-amount-col {
                 width: 20% !important;
             }
-            
+
             /* Make details column take most space */
             .mobile-details-col {
                 width: 80% !important;
             }
         }
-        
+
         /* Ensure table uses full width */
         .full-width-table {
             width: 100%;
