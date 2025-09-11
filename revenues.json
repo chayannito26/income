@@ -42,5 +42,16 @@
             "Arian Mollik Wasi"
         ],
         "comments": "Will be given back upon more registration"
+    },
+    {
+        "id": 1757582076263,
+        "source": "Registration Fee",
+        "amount": 1200,
+        "date": "2025-09-11",
+        "type": "Registration ",
+        "clients": [
+            "Marzia Mittika"
+        ],
+        "comments": "1x"
     }
 ]
