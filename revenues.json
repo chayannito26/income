@@ -42,5 +42,16 @@
             "Arian Mollik Wasi"
         ],
         "comments": "Will be given back upon more registration"
+    },
+    {
+        "id": 1757748774514,
+        "source": "Loan from Arian Mollik Wasi",
+        "amount": 4000,
+        "date": "2025-09-13",
+        "type": "Loan",
+        "clients": [
+            "Arian Mollik Wasi"
+        ],
+        "comments": "For Reels of wedding banner shoot advance"
     }
 ]
