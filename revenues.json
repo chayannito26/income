@@ -8,7 +8,7 @@
         "clients": [
             "Arian Mollik Wasi"
         ],
-        "comments": "Given for website"
+        "comments": "Given extra for website"
     },
     {
         "id": 3,
@@ -16,7 +16,7 @@
         "amount": 2500,
         "date": "2025-08-18",
         "type": "Registration",
-        "comments": "For 2 person",
+        "comments": "Afiya Rubaiyah and S Shanta",
         "clients": [
             "S Shanta"
         ]
@@ -48,11 +48,11 @@
         "source": "Registration Fee",
         "amount": 1200,
         "date": "2025-09-11",
-        "type": "Registration ",
+        "type": "Registration",
         "clients": [
             "Marzia Mittika"
         ],
-        "comments": "1x"
+        "comments": "Marzia Mittika"
     },
     {
         "id": 1757748774514,
@@ -64,5 +64,16 @@
             "Arian Mollik Wasi"
         ],
         "comments": "For Reels of wedding banner shoot advance"
+    },
+    {
+        "id": 1757853794417,
+        "source": "Registration Fee",
+        "amount": 1200,
+        "date": "2025-09-14",
+        "type": "Registration",
+        "clients": [
+            "Arian Mollik Wasi"
+        ],
+        "comments": "Kazi saimum"
     }
 ]
