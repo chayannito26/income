@@ -75,5 +75,16 @@
             "Arian Mollik Wasi"
         ],
         "comments": "Kazi saimum"
+    },
+    {
+        "id": 1757958349993,
+        "source": "Registration Fee",
+        "amount": 2400,
+        "date": "2025-09-15",
+        "type": "Registration",
+        "clients": [
+            "Arian Mollik Wasi"
+        ],
+        "comments": "shahirar islam and nazmus sadat"
     }
 ]
