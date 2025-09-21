@@ -86,5 +86,16 @@
             "Arian Mollik Wasi"
         ],
         "comments": "shahirar islam and nazmus sadat"
+    },
+    {
+        "id": 1758458065445,
+        "source": "Nafiz",
+        "amount": 2400,
+        "date": "2025-09-21",
+        "type": "Registration",
+        "clients": [
+            "Sahariar Nafiz"
+        ],
+        "comments": ""
     }
 ]
