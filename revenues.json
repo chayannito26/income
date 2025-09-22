@@ -89,7 +89,7 @@
     },
     {
         "id": 1758458065445,
-        "source": "Nafiz",
+        "source": "Registration Fee",
         "amount": 2400,
         "date": "2025-09-21",
         "type": "Registration",
@@ -97,5 +97,16 @@
             "Sahariar Nafiz"
         ],
         "comments": "nafi and nafiz"
+    },
+    {
+        "id": 1758543067897,
+        "source": "Registration Fee",
+        "amount": 1200,
+        "date": "2025-09-22",
+        "type": "Registration",
+        "clients": [
+            "Faisal Arefin"
+        ],
+        "comments": "tanzid jayed"
     }
 ]
