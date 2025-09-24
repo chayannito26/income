@@ -119,5 +119,16 @@
             "Marzia Mittika"
         ],
         "comments": "Sura"
+    },
+    {
+        "id": 1758727797923,
+        "source": "Registration Fee",
+        "amount": 1200,
+        "date": "2025-09-24",
+        "type": "Registration",
+        "clients": [
+            "Sahariar Nafiz"
+        ],
+        "comments": "newaj"
     }
 ]
