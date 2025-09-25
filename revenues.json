@@ -130,5 +130,27 @@
             "Sahariar Nafiz"
         ],
         "comments": "newaj"
+    },
+    {
+        "id": 1758824557516,
+        "source": "Registration Fee",
+        "amount": 1200,
+        "date": "2025-09-25",
+        "type": "Registration",
+        "clients": [
+            "Mehbuba"
+        ],
+        "comments": "Masura Khatun"
+    },
+    {
+        "id": 1758824577563,
+        "source": "Registration Fee",
+        "amount": 1200,
+        "date": "2025-09-25",
+        "type": "Registration",
+        "clients": [
+            "Marzia Mittika"
+        ],
+        "comments": "Tasnia Khatun"
     }
 ]
