@@ -163,5 +163,16 @@
       "Marzia Mittika"
     ],
     "comments": "Maisha Tabassum"
+  },
+  {
+    "id": 1759132669763,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-09-29",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "S. M. J. R. Abeer"
   }
 ]
