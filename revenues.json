@@ -165,6 +165,17 @@
     "comments": "Maisha Tabassum"
   },
   {
+    "id": 1759026303774,
+    "source": "Loan from Arian Mollik Wasi",
+    "amount": 5000,
+    "date": "2025-09-28",
+    "type": "Loan",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "For theme song"
+  },
+  {
     "id": 1759132669763,
     "source": "Registration Fee",
     "amount": 1200,
