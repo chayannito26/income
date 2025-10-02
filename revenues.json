@@ -196,5 +196,16 @@
       "Arian Mollik Wasi"
     ],
     "comments": "Faisal Arefin Shezan"
+  },
+  {
+    "id": 1759415593769,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-02",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Redwan Talha"
   }
 ]
