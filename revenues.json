@@ -207,5 +207,16 @@
       "Arian Mollik Wasi"
     ],
     "comments": "Redwan Talha"
+  },
+  {
+    "id": 1759415714968,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-02",
+    "type": "Registration",
+    "clients": [
+      "Sahariar Nafiz"
+    ],
+    "comments": "Redwan Talha"
   }
 ]
