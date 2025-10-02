@@ -1,233 +1,222 @@
 [
-  {
-    "id": 1,
-    "source": "Registration Fee",
-    "amount": 1513.13,
-    "date": "2025-08-17",
-    "type": "Registration",
-    "clients": [
-      "Arian Mollik Wasi"
-    ],
-    "comments": "Given extra for website"
-  },
-  {
-    "id": 3,
-    "source": "Registration Fee",
-    "amount": 2500,
-    "date": "2025-08-18",
-    "type": "Registration",
-    "comments": "Afiya Rubaiyah and S Shanta",
-    "clients": [
-      "S Shanta"
-    ]
-  },
-  {
-    "id": 5,
-    "source": "Loan from Arian Mollik Wasi",
-    "amount": 2500,
-    "date": "2025-08-18",
-    "type": "Loan",
-    "clients": [
-      "Arian Mollik Wasi"
-    ],
-    "comments": "Will be given back upon more registration"
-  },
-  {
-    "id": 1755946514423,
-    "source": "Loan from Arian Mollik Wasi",
-    "amount": 5000,
-    "date": "2025-08-23",
-    "type": "Loan",
-    "clients": [
-      "Arian Mollik Wasi"
-    ],
-    "comments": "Will be given back upon more registration"
-  },
-  {
-    "id": 1757582076263,
-    "source": "Registration Fee",
-    "amount": 1200,
-    "date": "2025-09-11",
-    "type": "Registration",
-    "clients": [
-      "Marzia Mittika"
-    ],
-    "comments": "Marzia Mittika"
-  },
-  {
-    "id": 1757748774514,
-    "source": "Loan from Arian Mollik Wasi",
-    "amount": 4000,
-    "date": "2025-09-13",
-    "type": "Loan",
-    "clients": [
-      "Arian Mollik Wasi"
-    ],
-    "comments": "For Reels of wedding banner shoot advance"
-  },
-  {
-    "id": 1757853794417,
-    "source": "Registration Fee",
-    "amount": 1200,
-    "date": "2025-09-14",
-    "type": "Registration",
-    "clients": [
-      "Arian Mollik Wasi"
-    ],
-    "comments": "Kazi saimum"
-  },
-  {
-    "id": 1757958349993,
-    "source": "Registration Fee",
-    "amount": 2400,
-    "date": "2025-09-15",
-    "type": "Registration",
-    "clients": [
-      "Arian Mollik Wasi"
-    ],
-    "comments": "shahirar islam and nazmus sadat"
-  },
-  {
-    "id": 1758458065445,
-    "source": "Registration Fee",
-    "amount": 2400,
-    "date": "2025-09-21",
-    "type": "Registration",
-    "clients": [
-      "Sahariar Nafiz"
-    ],
-    "comments": "nafi and nafiz"
-  },
-  {
-    "id": 1758543067897,
-    "source": "Registration Fee",
-    "amount": 1200,
-    "date": "2025-09-22",
-    "type": "Registration",
-    "clients": [
-      "Faisal Arefin"
-    ],
-    "comments": "tanzid jayed"
-  },
-  {
-    "id": 1758688935656,
-    "source": "Registration Fee",
-    "amount": 1200,
-    "date": "2025-09-24",
-    "type": "Registration",
-    "clients": [
-      "Marzia Mittika"
-    ],
-    "comments": "Sura"
-  },
-  {
-    "id": 1758727797923,
-    "source": "Registration Fee",
-    "amount": 1200,
-    "date": "2025-09-24",
-    "type": "Registration",
-    "clients": [
-      "Sahariar Nafiz"
-    ],
-    "comments": "newaj"
-  },
-  {
-    "id": 1758824557516,
-    "source": "Registration Fee",
-    "amount": 1200,
-    "date": "2025-09-25",
-    "type": "Registration",
-    "clients": [
-      "Mehbuba"
-    ],
-    "comments": "Masura Khatun"
-  },
-  {
-    "id": 1758824577563,
-    "source": "Registration Fee",
-    "amount": 1200,
-    "date": "2025-09-25",
-    "type": "Registration",
-    "clients": [
-      "Marzia Mittika"
-    ],
-    "comments": "Tasnia Khatun"
-  },
-  {
-    "id": 1758952069302,
-    "source": "Registration Fee",
-    "amount": 1200,
-    "date": "2025-09-27",
-    "type": "Registration",
-    "clients": [
-      "Marzia Mittika"
-    ],
-    "comments": "Maisha Tabassum"
-  },
-  {
-    "id": 1759026303774,
-    "source": "Loan from Arian Mollik Wasi",
-    "amount": 5000,
-    "date": "2025-09-28",
-    "type": "Loan",
-    "clients": [
-      "Arian Mollik Wasi"
-    ],
-    "comments": "For theme song"
-  },
-  {
-    "id": 1759132669763,
-    "source": "Registration Fee",
-    "amount": 1200,
-    "date": "2025-09-29",
-    "type": "Registration",
-    "clients": [
-      "Arian Mollik Wasi"
-    ],
-    "comments": "S. M. J. R. Abeer"
-  },
-  {
-    "id": 1759347424354,
-    "source": "Registration Fee",
-    "amount": 1200,
-    "date": "2025-10-02",
-    "type": "Registration",
-    "clients": [
-      "Arian Mollik Wasi"
-    ],
-    "comments": "Faisal Arefin Shezan"
-  },
-  {
-    "id": 1759415593769,
-    "source": "Registration Fee",
-    "amount": 1200,
-    "date": "2025-10-02",
-    "type": "Registration",
-    "clients": [
-      "Arian Mollik Wasi"
-    ],
-    "comments": "Redwan Talha"
-  },
-  {
-    "id": 1759415714968,
-    "source": "Registration Fee",
-    "amount": 1200,
-    "date": "2025-10-02",
-    "type": "Registration",
-    "clients": [
-      "Sahariar Nafiz"
-    ],
-    "comments": "Redwan Talha"
-  },
-  {
-    "id": 1759415808162,
-    "source": "Registration Fee",
-    "amount": 1200,
-    "date": "2025-10-02",
-    "type": "Registration",
-    "clients": [
-      "Sahariar Nafiz"
-    ],
-    "comments": "Redwan Talha"
-  }
+    {
+        "id": 1,
+        "source": "Registration Fee",
+        "amount": 1513.13,
+        "date": "2025-08-17",
+        "type": "Registration",
+        "clients": [
+            "Arian Mollik Wasi"
+        ],
+        "comments": "Given extra for website"
+    },
+    {
+        "id": 3,
+        "source": "Registration Fee",
+        "amount": 2500,
+        "date": "2025-08-18",
+        "type": "Registration",
+        "comments": "Afiya Rubaiyah and S Shanta",
+        "clients": [
+            "S Shanta"
+        ]
+    },
+    {
+        "id": 5,
+        "source": "Loan from Arian Mollik Wasi",
+        "amount": 2500,
+        "date": "2025-08-18",
+        "type": "Loan",
+        "clients": [
+            "Arian Mollik Wasi"
+        ],
+        "comments": "Will be given back upon more registration"
+    },
+    {
+        "id": 1755946514423,
+        "source": "Loan from Arian Mollik Wasi",
+        "amount": 5000,
+        "date": "2025-08-23",
+        "type": "Loan",
+        "clients": [
+            "Arian Mollik Wasi"
+        ],
+        "comments": "Will be given back upon more registration"
+    },
+    {
+        "id": 1757582076263,
+        "source": "Registration Fee",
+        "amount": 1200,
+        "date": "2025-09-11",
+        "type": "Registration",
+        "clients": [
+            "Marzia Mittika"
+        ],
+        "comments": "Marzia Mittika"
+    },
+    {
+        "id": 1757748774514,
+        "source": "Loan from Arian Mollik Wasi",
+        "amount": 4000,
+        "date": "2025-09-13",
+        "type": "Loan",
+        "clients": [
+            "Arian Mollik Wasi"
+        ],
+        "comments": "For Reels of wedding banner shoot advance"
+    },
+    {
+        "id": 1757853794417,
+        "source": "Registration Fee",
+        "amount": 1200,
+        "date": "2025-09-14",
+        "type": "Registration",
+        "clients": [
+            "Arian Mollik Wasi"
+        ],
+        "comments": "Kazi saimum"
+    },
+    {
+        "id": 1757958349993,
+        "source": "Registration Fee",
+        "amount": 2400,
+        "date": "2025-09-15",
+        "type": "Registration",
+        "clients": [
+            "Arian Mollik Wasi"
+        ],
+        "comments": "shahirar islam and nazmus sadat"
+    },
+    {
+        "id": 1758458065445,
+        "source": "Registration Fee",
+        "amount": 2400,
+        "date": "2025-09-21",
+        "type": "Registration",
+        "clients": [
+            "Sahariar Nafiz"
+        ],
+        "comments": "nafi and nafiz"
+    },
+    {
+        "id": 1758543067897,
+        "source": "Registration Fee",
+        "amount": 1200,
+        "date": "2025-09-22",
+        "type": "Registration",
+        "clients": [
+            "Faisal Arefin"
+        ],
+        "comments": "tanzid jayed"
+    },
+    {
+        "id": 1758688935656,
+        "source": "Registration Fee",
+        "amount": 1200,
+        "date": "2025-09-24",
+        "type": "Registration",
+        "clients": [
+            "Marzia Mittika"
+        ],
+        "comments": "Sura"
+    },
+    {
+        "id": 1758727797923,
+        "source": "Registration Fee",
+        "amount": 1200,
+        "date": "2025-09-24",
+        "type": "Registration",
+        "clients": [
+            "Sahariar Nafiz"
+        ],
+        "comments": "newaj"
+    },
+    {
+        "id": 1758824557516,
+        "source": "Registration Fee",
+        "amount": 1200,
+        "date": "2025-09-25",
+        "type": "Registration",
+        "clients": [
+            "Mehbuba"
+        ],
+        "comments": "Masura Khatun"
+    },
+    {
+        "id": 1758824577563,
+        "source": "Registration Fee",
+        "amount": 1200,
+        "date": "2025-09-25",
+        "type": "Registration",
+        "clients": [
+            "Marzia Mittika"
+        ],
+        "comments": "Tasnia Khatun"
+    },
+    {
+        "id": 1758952069302,
+        "source": "Registration Fee",
+        "amount": 1200,
+        "date": "2025-09-27",
+        "type": "Registration",
+        "clients": [
+            "Marzia Mittika"
+        ],
+        "comments": "Maisha Tabassum"
+    },
+    {
+        "id": 1759026303774,
+        "source": "Loan from Arian Mollik Wasi",
+        "amount": 5000,
+        "date": "2025-09-28",
+        "type": "Loan",
+        "clients": [
+            "Arian Mollik Wasi"
+        ],
+        "comments": "For theme song"
+    },
+    {
+        "id": 1759132669763,
+        "source": "Registration Fee",
+        "amount": 1200,
+        "date": "2025-09-29",
+        "type": "Registration",
+        "clients": [
+            "Arian Mollik Wasi"
+        ],
+        "comments": "S. M. J. R. Abeer"
+    },
+    {
+        "id": 1759347424354,
+        "source": "Registration Fee",
+        "amount": 1200,
+        "date": "2025-10-02",
+        "type": "Registration",
+        "clients": [
+            "Arian Mollik Wasi"
+        ],
+        "comments": "Faisal Arefin Shezan"
+    },
+    {
+        "id": 1759415714968,
+        "source": "Registration Fee",
+        "amount": 1200,
+        "date": "2025-10-02",
+        "type": "Registration",
+        "clients": [
+            "Sahariar Nafiz"
+        ],
+        "comments": "Redwan Talha"
+    },
+    {
+        "id": 1759415808162,
+        "source": "Registration Fee",
+        "amount": 1200,
+        "date": "2025-10-02",
+        "type": "Registration",
+        "clients": [
+            "Sahariar Nafiz"
+        ],
+        "comments": "Redwan Talha"
+    }
 ]
