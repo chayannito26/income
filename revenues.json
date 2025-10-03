@@ -229,5 +229,16 @@
       "Arian Mollik Wasi"
     ],
     "comments": "Md. Minhazul Islam"
+  },
+  {
+    "id": 1759523691522,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-04",
+    "type": "Registration",
+    "clients": [
+      "Sahariar Nafiz"
+    ],
+    "comments": "Nafizur Rahman Ridoy"
   }
 ]
