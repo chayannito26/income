@@ -240,5 +240,16 @@
       "Sahariar Nafiz"
     ],
     "comments": "Nafizur Rahman Ridoy"
+  },
+  {
+    "id": 1759523965415,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-04",
+    "type": "Registration",
+    "clients": [
+      "Tanvir Hossain Chowdhury"
+    ],
+    "comments": "Amir hamja"
   }
 ]
