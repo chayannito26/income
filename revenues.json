@@ -251,5 +251,16 @@
       "Tanvir Hossain Chowdhury"
     ],
     "comments": "Amir hamja"
+  },
+  {
+    "id": 1759588222434,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-04",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Roddro Zaman"
   }
 ]
