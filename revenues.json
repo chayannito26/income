@@ -262,5 +262,16 @@
       "Arian Mollik Wasi"
     ],
     "comments": "Roddro Zaman"
+  },
+  {
+    "id": 1759588331448,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-04",
+    "type": "Registration",
+    "clients": [
+      "Nafiza Tanzim Hafsa"
+    ],
+    "comments": "Ayesha Siddiqua Ahona"
   }
 ]
