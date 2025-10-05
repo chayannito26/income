@@ -284,5 +284,16 @@
       "Arian Mollik Wasi"
     ],
     "comments": "Nazmul Islam Himel"
+  },
+  {
+    "id": 1759645878801,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-05",
+    "type": "Registration",
+    "clients": [
+      "Mehbuba"
+    ],
+    "comments": "Meheboba Islam Mouli"
   }
 ]
