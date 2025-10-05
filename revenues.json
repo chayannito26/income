@@ -295,5 +295,16 @@
       "Mehbuba"
     ],
     "comments": "Meheboba Islam Mouli"
+  },
+  {
+    "id": 1759648334554,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-05",
+    "type": "Registration",
+    "clients": [
+      "Marzia Mittika"
+    ],
+    "comments": "Jannatul Ferdous"
   }
 ]
