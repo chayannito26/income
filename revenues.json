@@ -317,5 +317,16 @@
       "Arian Mollik Wasi"
     ],
     "comments": "Akibul Haque Nahid"
+  },
+  {
+    "id": 1759822698912,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-07",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Rafiu Tahrim Ahmed"
   }
 ]
