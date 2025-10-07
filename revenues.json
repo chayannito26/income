@@ -328,5 +328,16 @@
       "Arian Mollik Wasi"
     ],
     "comments": "Rafiu Tahrim Ahmed"
+  },
+  {
+    "id": 1759822915308,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-07",
+    "type": "Registration",
+    "clients": [
+      "Tanvir Hossain Chowdhury"
+    ],
+    "comments": "Rohan Ahmed"
   }
 ]
