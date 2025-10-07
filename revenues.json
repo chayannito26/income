@@ -306,5 +306,16 @@
       "Marzia Mittika"
     ],
     "comments": "Jannatul Ferdous"
+  },
+  {
+    "id": 1759822621998,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-07",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Akibul Haque Nahid"
   }
 ]
