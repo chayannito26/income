@@ -339,5 +339,16 @@
       "Tanvir Hossain Chowdhury"
     ],
     "comments": "Rohan Ahmed"
+  },
+  {
+    "id": 1759930458611,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-08",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md. Zahin Dhaihan Maruf"
   }
 ]
