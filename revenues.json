@@ -361,5 +361,16 @@
       "Arian Mollik Wasi"
     ],
     "comments": "Md. Junaid Islam Shafi"
+  },
+  {
+    "id": 1759986954029,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-09",
+    "type": "Registration",
+    "clients": [
+      "Tanvir Hossain Chowdhury"
+    ],
+    "comments": "Sakib-Al Hasan"
   }
 ]
