@@ -350,5 +350,16 @@
       "Arian Mollik Wasi"
     ],
     "comments": "Md. Zahin Dhaihan Maruf"
+  },
+  {
+    "id": 1759985423328,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-09",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md. Junaid Islam Shafi"
   }
 ]
