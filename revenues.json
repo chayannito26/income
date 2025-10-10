@@ -383,5 +383,16 @@
       "Tanvir Hossain Chowdhury"
     ],
     "comments": "Md. Rihad Hossain"
+  },
+  {
+    "id": 1760117363705,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-10",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md. Dipu"
   }
 ]
