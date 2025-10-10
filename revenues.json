@@ -372,5 +372,16 @@
       "Arian Mollik Wasi"
     ],
     "comments": "Sakib-Al Hasan"
+  },
+  {
+    "id": 1760114557879,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-10",
+    "type": "Registration",
+    "clients": [
+      "Tanvir Hossain Chowdhury"
+    ],
+    "comments": "Md. Rihad Hossain"
   }
 ]
