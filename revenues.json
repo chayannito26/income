@@ -405,5 +405,16 @@
       "Marzia Mittika"
     ],
     "comments": "Nayma"
+  },
+  {
+    "id": 1760296283850,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-13",
+    "type": "Registration",
+    "clients": [
+      "Tanvir Hossain Chowdhury"
+    ],
+    "comments": "Md. Jeet Hasan Zidan"
   }
 ]
