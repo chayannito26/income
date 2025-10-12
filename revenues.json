@@ -394,5 +394,16 @@
       "Arian Mollik Wasi"
     ],
     "comments": "Md. Dipu"
+  },
+  {
+    "id": 1760296075956,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-13",
+    "type": "Registration",
+    "clients": [
+      "Marzia Mittika"
+    ],
+    "comments": "Nayma"
   }
 ]
