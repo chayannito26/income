@@ -449,5 +449,16 @@
       "Mehbuba"
     ],
     "comments": "Mohona Rani Pramanik"
+  },
+  {
+    "id": 1760547197326,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-15",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md. Jubayer Pramanik Sakib"
   }
 ]
