@@ -438,5 +438,16 @@
       "Marzia Mittika"
     ],
     "comments": "Hasnat Jahan Esha"
+  },
+  {
+    "id": 1760546925877,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-15",
+    "type": "Registration",
+    "clients": [
+      "Mehbuba"
+    ],
+    "comments": "Mohona Rani Pramanik"
   }
 ]
