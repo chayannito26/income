@@ -416,5 +416,16 @@
       "Arian Mollik Wasi"
     ],
     "comments": "Md. Jeet Hasan Zidan"
+  },
+  {
+    "id": 1760546717492,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-15",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md. Kaif Rahman"
   }
 ]
