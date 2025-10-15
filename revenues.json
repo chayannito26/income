@@ -427,5 +427,16 @@
       "Arian Mollik Wasi"
     ],
     "comments": "Md. Kaif Rahman"
+  },
+  {
+    "id": 1760546864226,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-15",
+    "type": "Registration",
+    "clients": [
+      "Marzia Mittika"
+    ],
+    "comments": "Hasnat Jahan Esha"
   }
 ]
