@@ -460,5 +460,16 @@
       "Arian Mollik Wasi"
     ],
     "comments": "Md. Jubayer Pramanik Sakib"
+  },
+  {
+    "id": 1760620158119,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-16",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Muammar Al Mujahid"
   }
 ]
