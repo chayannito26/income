@@ -482,5 +482,16 @@
       "Marzia Mittika"
     ],
     "comments": "Jannatul Maoya"
+  },
+  {
+    "id": 1760620231024,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-16",
+    "type": "Registration",
+    "clients": [
+      "Marzia Mittika"
+    ],
+    "comments": "Tamanna Hossen Tisha"
   }
 ]
