@@ -493,5 +493,16 @@
       "Marzia Mittika"
     ],
     "comments": "Tamanna Hossen Tisha"
+  },
+  {
+    "id": 1760620298878,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-16",
+    "type": "Registration",
+    "clients": [
+      "Marzia Mittika"
+    ],
+    "comments": "Shanin Sakhawath Bishwas"
   }
 ]
