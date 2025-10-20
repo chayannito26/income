@@ -537,5 +537,16 @@
       "Mehbuba"
     ],
     "comments": "Mst. Mymuna Khatun"
+  },
+  {
+    "id": 1760985588601,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-21",
+    "type": "Registration",
+    "clients": [
+      "Tanzid Jayid"
+    ],
+    "comments": "Jayed Sheik"
   }
 ]
