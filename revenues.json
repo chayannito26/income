@@ -504,5 +504,16 @@
       "Marzia Mittika"
     ],
     "comments": "Shanin Sakhawath Bishwas"
+  },
+  {
+    "id": 1760985329666,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-21",
+    "type": "Registration",
+    "clients": [
+      "Mehbuba"
+    ],
+    "comments": "Samiya Ansari"
   }
 ]
