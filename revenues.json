@@ -515,5 +515,16 @@
       "Mehbuba"
     ],
     "comments": "Samiya Ansari"
+  },
+  {
+    "id": 1760985379290,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-21",
+    "type": "Registration",
+    "clients": [
+      "Tanzid Jayid"
+    ],
+    "comments": "Md. Siam"
   }
 ]
