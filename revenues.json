@@ -526,5 +526,16 @@
       "Tanzid Jayid"
     ],
     "comments": "Md. Siam"
+  },
+  {
+    "id": 1760985526115,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-21",
+    "type": "Registration",
+    "clients": [
+      "Mehbuba"
+    ],
+    "comments": "Mst. Mymuna Khatun"
   }
 ]
