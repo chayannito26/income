@@ -548,5 +548,27 @@
       "Tanzid Jayid"
     ],
     "comments": "Jayed Sheik"
+  },
+  {
+    "id": 1761157101372,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-23",
+    "type": "Registration",
+    "clients": [
+      "Mehbuba"
+    ],
+    "comments": "Mst. Akhi Khatun"
+  },
+  {
+    "id": 1761157201140,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-23",
+    "type": "Registration",
+    "clients": [
+      "Tanzid Jayid"
+    ],
+    "comments": "Mohammad Main Uddin Khan Main"
   }
 ]
