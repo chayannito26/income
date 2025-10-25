@@ -4,18 +4,18 @@ import os
 
 def squash_revenues(input_file):
     """
-    Squashes revenue entries by the same person on a single day into a single entry.
+    Squashes revenue entries by the same person on a single day and of the same type into a single entry.
     The original file is renamed with a .bak extension.
     """
     with open(input_file, 'r') as f:
         revenues = json.load(f)
 
-    # Use a dictionary to group revenues by date and the primary client
+    # Use a dictionary to group revenues by date, primary client, and type
     grouped_revenues = defaultdict(list)
     for revenue in revenues:
         if revenue.get('clients'):
-            # Create a unique key for each date and client
-            key = (revenue['date'], revenue['clients'][0])
+            # Create a unique key for each date, client, and type
+            key = (revenue['date'], revenue['clients'][0], revenue['type'])
             grouped_revenues[key].append(revenue)
 
     squashed_list = []
@@ -26,11 +26,15 @@ def squash_revenues(input_file):
             squashed_list.append(revenue)
             continue
 
-        key = (revenue['date'], revenue['clients'][0])
+        key = (revenue['date'], revenue['clients'][0], revenue['type'])
         if key in processed_groups:
             continue
 
-        group = grouped_revenues[key]
+        group = grouped_revenues.get(key)
+        if not group:
+            squashed_list.append(revenue)
+            continue
+            
         processed_groups.add(key)
 
         if len(group) == 1:
@@ -60,7 +64,7 @@ def squash_revenues(input_file):
             'source': source,
             'amount': total_amount,
             'date': key[0],
-            'type': group[0]['type'],
+            'type': key[2],
             'clients': [key[1]],
             'comments': comments
         }
@@ -71,6 +75,8 @@ def squash_revenues(input_file):
 
     # Rename original file to .bak
     backup_file = input_file + '.bak'
+    if os.path.exists(backup_file):
+        os.remove(backup_file)
     os.rename(input_file, backup_file)
 
     # Write the squashed data to the original filename

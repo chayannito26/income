@@ -254,14 +254,14 @@
   },
   {
     "id": 1759645178248,
-    "source": "Registration Fee, Mahmuda Sultana",
-    "amount": 301200,
+    "source": "Registration Fee",
+    "amount": 1200,
     "date": "2025-10-05",
     "type": "Registration",
     "clients": [
       "Arian Mollik Wasi"
     ],
-    "comments": "Nazmul Islam Himel, Will be taken back after square gives money"
+    "comments": "Nazmul Islam Himel"
   },
   {
     "id": 1759645878801,
@@ -284,6 +284,17 @@
       "Marzia Mittika"
     ],
     "comments": "Jannatul Ferdous"
+  },
+  {
+    "id": 1761420408439,
+    "source": "Mahmuda Sultana",
+    "amount": 300000,
+    "date": "2025-10-05",
+    "type": "Sponsor",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Will be taken back after square gives money"
   },
   {
     "id": 1759822621998,
@@ -567,7 +578,7 @@
     "date": "2025-10-25",
     "type": "Registration",
     "clients": [
-      "Amir Hamja"
+      "Tanzid Jayid"
     ],
     "comments": "Md. Atiqur Rahman"
   }
