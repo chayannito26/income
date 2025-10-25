@@ -1,9 +1,11 @@
 import json
 from collections import defaultdict
+import os
 
-def squash_revenues(input_file, output_file):
+def squash_revenues(input_file):
     """
     Squashes revenue entries by the same person on a single day into a single entry.
+    The original file is renamed with a .bak extension.
     """
     with open(input_file, 'r') as f:
         revenues = json.load(f)
@@ -67,10 +69,15 @@ def squash_revenues(input_file, output_file):
     # Sort the final list by date
     squashed_list.sort(key=lambda x: x['date'])
 
-    # Write the squashed data to the output file
-    with open(output_file, 'w') as f:
+    # Rename original file to .bak
+    backup_file = input_file + '.bak'
+    os.rename(input_file, backup_file)
+
+    # Write the squashed data to the original filename
+    with open(input_file, 'w') as f:
         json.dump(squashed_list, f, indent=2)
 
 if __name__ == '__main__':
-    squash_revenues('revenues.json', 'squashed_revenues.json')
-    print("Revenues have been squashed and saved to squashed_revenues.json")
+    input_filename = 'revenues.json'
+    squash_revenues(input_filename)
+    print(f"Revenues in '{input_filename}' have been squashed. Original file saved as '{input_filename}.bak'")
