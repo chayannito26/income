@@ -581,5 +581,60 @@
       "Tanzid Jayid"
     ],
     "comments": "Md. Atiqur Rahman"
+  },
+  {
+    "id": 1761552016908,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-27",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Jannatul Fardos Soshe"
+  },
+  {
+    "id": 1761552311133,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-27",
+    "type": "Registration",
+    "clients": [
+      "Amir Hamja"
+    ],
+    "comments": "Md Minhaz Khondokar Emon"
+  },
+  {
+    "id": 1761552428634,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-27",
+    "type": "Registration",
+    "clients": [
+      "Marzia Mittika"
+    ],
+    "comments": "Rubiya Afiya Suchi"
+  },
+  {
+    "id": 1761552478690,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-27",
+    "type": "Registration",
+    "clients": [
+      "Marzia Mittika"
+    ],
+    "comments": "Farhatul Jannat Jim"
+  },
+  {
+    "id": 1761552506592,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-27",
+    "type": "Registration",
+    "clients": [
+      "Marzia Mittika"
+    ],
+    "comments": "Mst. Farjana Faria Maisha"
   }
 ]
