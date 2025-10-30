@@ -636,5 +636,38 @@
       "Marzia Mittika"
     ],
     "comments": "Mst. Farjana Faria Maisha"
+  },
+  {
+    "id": 1761759061427,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-29",
+    "type": "Registration",
+    "clients": [
+      "S Shanta"
+    ],
+    "comments": "Sinthia Ridy"
+  },
+  {
+    "id": 1761759079519,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-29",
+    "type": "Registration",
+    "clients": [
+      "S Shanta"
+    ],
+    "comments": "Mst. Farhana Akter Mohona"
+  },
+  {
+    "id": 1761759186004,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-29",
+    "type": "Registration",
+    "clients": [
+      "Tanzid Jayid"
+    ],
+    "comments": "Md. Shohel Rana"
   }
 ]
