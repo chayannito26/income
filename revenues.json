@@ -669,5 +669,29 @@
       "Tanzid Jayid"
     ],
     "comments": "Md. Shohel Rana"
+  },
+  {
+    "id": 1761890841493,
+    "source": "Shimul Biswas",
+    "amount": 27000,
+    "date": "2025-10-31",
+    "type": "Sponsor",
+    "clients": [
+      "Wasi",
+      "Roddro",
+      "Saruk"
+    ],
+    "comments": "from his house"
+  },
+  {
+    "id": 1761891060344,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-10-31",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Mehedi Hasan Saruk"
   }
 ]
