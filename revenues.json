@@ -693,5 +693,27 @@
       "Arian Mollik Wasi"
     ],
     "comments": "Mehedi Hasan Saruk"
+  },
+  {
+    "id": 1762085302033,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-02",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md. Rubayet Hossain"
+  },
+  {
+    "id": 1762085352248,
+    "source": "Registration Fee",
+    "amount": 1000,
+    "date": "2025-11-02",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Emtiaj Ahmed Tamim"
   }
 ]
