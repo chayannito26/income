@@ -715,5 +715,60 @@
       "Arian Mollik Wasi"
     ],
     "comments": "Emtiaj Ahmed Tamim"
+  },
+  {
+    "id": 1762151749281,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-03",
+    "type": "Registration",
+    "clients": [
+      "S Shanta"
+    ],
+    "comments": "Jannatul Tayaba Tuba"
+  },
+  {
+    "id": 1762151996534,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-03",
+    "type": "Registration",
+    "clients": [
+      "Tanzid Jayid"
+    ],
+    "comments": "Md. Asikur Rahman Asik"
+  },
+  {
+    "id": 1762152041685,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-03",
+    "type": "Registration",
+    "clients": [
+      "Tanzid Jayid"
+    ],
+    "comments": "Md. Piarul Hossain"
+  },
+  {
+    "id": 1762152080798,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-03",
+    "type": "Registration",
+    "clients": [
+      "Tanzid Jayid"
+    ],
+    "comments": "Md. Arafat Hossain"
+  },
+  {
+    "id": 1762152106431,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-03",
+    "type": "Registration",
+    "clients": [
+      "Tanzid Jayid"
+    ],
+    "comments": "Md. Siam Hassan"
   }
 ]
