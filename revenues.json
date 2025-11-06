@@ -770,5 +770,137 @@
       "Tanzid Jayid"
     ],
     "comments": "Md. Siam Hassan"
+  },
+  {
+    "id": 1762270142318,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-04",
+    "type": "Registration",
+    "clients": [
+      "Marzia Mittika"
+    ],
+    "comments": "Mst. Sanjida Akter Afsana"
+  },
+  {
+    "id": 1762270207696,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-04",
+    "type": "Registration",
+    "clients": [
+      "Marzia Mittika"
+    ],
+    "comments": "Mst. Marufa Khatun"
+  },
+  {
+    "id": 1762270252740,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-04",
+    "type": "Registration",
+    "clients": [
+      "Marzia Mittika"
+    ],
+    "comments": "Mst. Sagupta Khatun Afiya"
+  },
+  {
+    "id": 1762270598048,
+    "source": "Registration Fee",
+    "amount": 1000,
+    "date": "2025-11-04",
+    "type": "Registration",
+    "clients": [
+      "Mehbuba"
+    ],
+    "comments": "Nusrat Jahan Neha"
+  },
+  {
+    "id": 1762270681976,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-04",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md. Ashik Khandaker"
+  },
+  {
+    "id": 1762271017434,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-04",
+    "type": "Registration",
+    "clients": [
+      "Sahariar Nafiz"
+    ],
+    "comments": "Mahbubur Rashid Khan"
+  },
+  {
+    "id": 1762271310227,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-04",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Mst. Mitu Khatun"
+  },
+  {
+    "id": 1762425402123,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-06",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md. Mustafizur Rahman"
+  },
+  {
+    "id": 1762425473255,
+    "source": "Registration Fee",
+    "amount": 800,
+    "date": "2025-11-06",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Molla Andalib Rahman Abir"
+  },
+  {
+    "id": 1762425492350,
+    "source": "Registration Fee",
+    "amount": 800,
+    "date": "2025-11-06",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md. Asifur Rahman"
+  },
+  {
+    "id": 1762425522266,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-06",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Mst. Bristi Sheikh"
+  },
+  {
+    "id": 1762425545051,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-06",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Mst. Maya Khatun"
   }
 ]
