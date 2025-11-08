@@ -902,5 +902,38 @@
       "Arian Mollik Wasi"
     ],
     "comments": "Mst. Maya Khatun"
+  },
+  {
+    "id": 1762578139673,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-08",
+    "type": "Registration",
+    "clients": [
+      "Sahariar Nafiz"
+    ],
+    "comments": "Md. Tanvir Rahman Bayzid"
+  },
+  {
+    "id": 1762578166147,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-08",
+    "type": "Registration",
+    "clients": [
+      "Sahariar Nafiz"
+    ],
+    "comments": "Araf Adiat"
+  },
+  {
+    "id": 1762578230055,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-08",
+    "type": "Registration",
+    "clients": [
+      "S Shanta"
+    ],
+    "comments": "Saraban Tahura Sara"
   }
 ]
