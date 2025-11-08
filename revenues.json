@@ -935,5 +935,93 @@
       "S Shanta"
     ],
     "comments": "Saraban Tahura Sara"
+  },
+  {
+    "id": 1762601967781,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-08",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md. Sabbir Hoshen"
+  },
+  {
+    "id": 1762602014246,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-08",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Tanjim Ahmed Turzo"
+  },
+  {
+    "id": 1762602031690,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-08",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md. Rakib Hossen"
+  },
+  {
+    "id": 1762602204527,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-08",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Sadd Al Golam Rabbi"
+  },
+  {
+    "id": 1762602260865,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-08",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md. Oyahidur Rahman Siam"
+  },
+  {
+    "id": 1762602290823,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-08",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Arafat Islam Sabid"
+  },
+  {
+    "id": 1762602326224,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-08",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md. Hiul Islam Himel"
+  },
+  {
+    "id": 1762602488359,
+    "source": "Registration Fee",
+    "amount": 1000,
+    "date": "2025-11-08",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Munsi Safat Ashkher"
   }
 ]
