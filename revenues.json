@@ -1023,5 +1023,115 @@
       "Arian Mollik Wasi"
     ],
     "comments": "Munsi Safat Ashkher"
+  },
+  {
+    "id": 1762752295024,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-10",
+    "type": "Registration",
+    "clients": [
+      "Sahariar Nafiz"
+    ],
+    "comments": "Md. Ibna Al Noman"
+  },
+  {
+    "id": 1762752315820,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-10",
+    "type": "Registration",
+    "clients": [
+      "Sahariar Nafiz"
+    ],
+    "comments": "Md. Saymon Hossain"
+  },
+  {
+    "id": 1762752339452,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-10",
+    "type": "Registration",
+    "clients": [
+      "Sahariar Nafiz"
+    ],
+    "comments": "Md. Ashik Khandaker"
+  },
+  {
+    "id": 1762752406837,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-10",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Mst. Marufa Khatun Mow"
+  },
+  {
+    "id": 1762752577731,
+    "source": "Registration Fee",
+    "amount": 1000,
+    "date": "2025-11-10",
+    "type": "Registration",
+    "clients": [
+      "Tanzid Jayid"
+    ],
+    "comments": "Md. Limon Hossain"
+  },
+  {
+    "id": 1762752612199,
+    "source": "Registration Fee",
+    "amount": 1000,
+    "date": "2025-11-10",
+    "type": "Registration",
+    "clients": [
+      "Tanzid Jayid"
+    ],
+    "comments": "Md. Rohan Biswas"
+  },
+  {
+    "id": 1762752686563,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-10",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Nusrat Jahan Trisha"
+  },
+  {
+    "id": 1762753021706,
+    "source": "Registration Fee",
+    "amount": 1000,
+    "date": "2025-11-10",
+    "type": "Registration",
+    "clients": [
+      "Tanzid Jayid"
+    ],
+    "comments": "Md. Abu Talha"
+  },
+  {
+    "id": 1762753165032,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-10",
+    "type": "Registration",
+    "clients": [
+      "Sahariar Nafiz"
+    ],
+    "comments": "Md. Mushfiqur Rahman Badhon"
+  },
+  {
+    "id": 1762753236000,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-10",
+    "type": "Registration",
+    "clients": [
+      "Sahariar Nafiz"
+    ],
+    "comments": "Md. Tanzib Ahmed Chanchal"
   }
 ]
