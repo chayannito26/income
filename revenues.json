@@ -1133,5 +1133,104 @@
       "Sahariar Nafiz"
     ],
     "comments": "Md. Tanzib Ahmed Chanchal"
+  },
+  {
+    "id": 1762753888074,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-10",
+    "type": "Registration",
+    "clients": [
+      "Sahariar Nafiz"
+    ],
+    "comments": "Md. Jakir Hossain"
+  },
+  {
+    "id": 1762786441661,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-10",
+    "type": "Registration",
+    "clients": [
+      "Tanzid Jayid"
+    ],
+    "comments": "Md. Murshid Mostofa Sani"
+  },
+  {
+    "id": 1762959138796,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-12",
+    "type": "Registration",
+    "clients": [
+      "Sahariar Nafiz"
+    ],
+    "comments": "Md. Rabbi Hossain"
+  },
+  {
+    "id": 1762959272116,
+    "source": "Registration Fee",
+    "amount": 1000,
+    "date": "2025-11-12",
+    "type": "Registration",
+    "clients": [
+      "S Shanta"
+    ],
+    "comments": "Maisha Akther Mahi"
+  },
+  {
+    "id": 1762959315283,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-12",
+    "type": "Registration",
+    "clients": [
+      "S Shanta"
+    ],
+    "comments": "Tassnuba Zarin Yanna"
+  },
+  {
+    "id": 1762959468157,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-12",
+    "type": "Registration",
+    "clients": [
+      "Mehbuba"
+    ],
+    "comments": "Jerin Tasnim"
+  },
+  {
+    "id": 1762959847365,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-12",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Shohan Mahmud"
+  },
+  {
+    "id": 1762959900461,
+    "source": "Registration Fee",
+    "amount": 1000,
+    "date": "2025-11-12",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Regdho Das Brinto"
+  },
+  {
+    "id": 1762960056547,
+    "source": "Registration Fee",
+    "amount": 1000,
+    "date": "2025-11-12",
+    "type": "Registration",
+    "clients": [
+      "Marzia Mittika"
+    ],
+    "comments": "Mst. Tazrin Islam"
   }
 ]
