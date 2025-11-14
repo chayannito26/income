@@ -1232,5 +1232,27 @@
       "Marzia Mittika"
     ],
     "comments": "Mst. Tazrin Islam"
+  },
+  {
+    "id": 1763055984663,
+    "source": "Registration Fee",
+    "amount": 1000,
+    "date": "2025-11-13",
+    "type": "Registration",
+    "clients": [
+      "Tanzid Jayid"
+    ],
+    "comments": "Md. Taj Mahmud"
+  },
+  {
+    "id": 1763056005408,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-13",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Anik Kumar Saha"
   }
 ]
