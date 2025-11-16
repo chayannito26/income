@@ -1254,5 +1254,16 @@
       "Arian Mollik Wasi"
     ],
     "comments": "Anik Kumar Saha"
+  },
+  {
+    "id": 1763289737769,
+    "source": "Registration Fee",
+    "amount": 1000,
+    "date": "2025-11-16",
+    "type": "Registration",
+    "clients": [
+      "Tanzid Jayid"
+    ],
+    "comments": "Md. Akash Mondol"
   }
 ]
