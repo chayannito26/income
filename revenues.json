@@ -1342,5 +1342,27 @@
       "Tanzid Jayid"
     ],
     "comments": "Md. Anik Islam Romon"
+  },
+  {
+    "id": 1763454049090,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-18",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md. Siyam"
+  },
+  {
+    "id": 1763454078555,
+    "source": "Registration Fee",
+    "amount": 1000,
+    "date": "2025-11-18",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md. Ubaydul Habib"
   }
 ]
