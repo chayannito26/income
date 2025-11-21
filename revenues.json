@@ -1364,5 +1364,49 @@
       "Arian Mollik Wasi"
     ],
     "comments": "Md. Ubaydul Habib"
+  },
+  {
+    "id": 1763454484655,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-18",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md. Ibrahim Haque"
+  },
+  {
+    "id": 1763740787807,
+    "source": "Registration Fee",
+    "amount": 1000,
+    "date": "2025-11-21",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Touhidul Haque Chowdhury"
+  },
+  {
+    "id": 1763741360456,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-21",
+    "type": "Registration",
+    "clients": [
+      "Tanzid Jayid"
+    ],
+    "comments": "Ajoy Kumer Deb"
+  },
+  {
+    "id": 1763741437862,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-21",
+    "type": "Registration",
+    "clients": [
+      "Marzia Mittika"
+    ],
+    "comments": "Nusrat Tabassum Urbi"
   }
 ]
