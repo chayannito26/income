@@ -1419,5 +1419,16 @@
             "Arian Mollik Wasi"
         ],
         "comments": "Sponsorship"
+    },
+    {
+        "id": 1763795586686,
+        "source": "Hemel Rana",
+        "amount": 10000,
+        "date": "2025-11-22",
+        "type": "Sponsor",
+        "clients": [
+            "Arian Mollik Wasi"
+        ],
+        "comments": "Glory Wind Shipping Services Private Limited"
     }
 ]
