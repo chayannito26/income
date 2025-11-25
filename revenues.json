@@ -1485,5 +1485,140 @@
       "Arian Mollik Wasi"
     ],
     "comments": "Mahib Hasan"
+  },
+  {
+    "id": 1764062698627,
+    "source": "Shoron",
+    "amount": 4000,
+    "date": "2025-11-24",
+    "type": "Sponsor",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Sponsor from Shoron Mistanno"
+  },
+  {
+    "id": 1764062860491,
+    "source": "Noyon",
+    "amount": 50000,
+    "date": "2025-11-25",
+    "type": "Sponsor",
+    "clients": [
+      "Wasi",
+      "Mehbuba",
+      "Shezan",
+      "Shanta"
+    ],
+    "comments": ""
+  },
+  {
+    "id": 1764062950543,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-25",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md. Abdullah -Al-Rakib"
+  },
+  {
+    "id": 1764063043525,
+    "source": "Registration Fee",
+    "amount": 1100,
+    "date": "2025-11-25",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md. Sifat Sarkar Joy"
+  },
+  {
+    "id": 1764063416940,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-25",
+    "type": "Registration",
+    "clients": [
+      "Sahariar Nafiz"
+    ],
+    "comments": "Mahin Mohammad Siam"
+  },
+  {
+    "id": 1764063461815,
+    "source": "Registration Fee",
+    "amount": 700,
+    "date": "2025-11-25",
+    "type": "Registration",
+    "clients": [
+      "Nafizur Rahman Ridoy"
+    ],
+    "comments": "Md. Mazharul Molla Sadhin"
+  },
+  {
+    "id": 1764063611579,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-25",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Shoron Gosh"
+  },
+  {
+    "id": 1764063771534,
+    "source": "Registration Fee",
+    "amount": 1100,
+    "date": "2025-11-25",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md, Sadat Rahman"
+  },
+  {
+    "id": 1764063836185,
+    "source": "Registration Fee",
+    "amount": 1100,
+    "date": "2025-11-25",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md. Moontasir Abedin Moon"
+  },
+  {
+    "id": 1764064910526,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-25",
+    "type": "Registration",
+    "clients": [
+      "S Shanta"
+    ],
+    "comments": "Mst. Fatema Khatun"
+  },
+  {
+    "id": 1764064924214,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-25",
+    "type": "Registration",
+    "clients": [
+      "S Shanta"
+    ],
+    "comments": "Humaira Akter"
+  },
+  {
+    "id": 1764064960031,
+    "source": "Registration Fee",
+    "amount": 1000,
+    "date": "2025-11-25",
+    "type": "Registration",
+    "clients": [
+      "S Shanta"
+    ],
+    "comments": "Maysha Mudra"
   }
 ]
