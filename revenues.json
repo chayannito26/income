@@ -1620,5 +1620,28 @@
       "S Shanta"
     ],
     "comments": "Maysha Mudra"
+  },
+  {
+    "id": 1764093160605,
+    "source": "Sanjid Pranto",
+    "amount": 3000,
+    "date": "2025-11-25",
+    "type": "Sponsor",
+    "clients": [
+      "Maruf",
+      "Wasi"
+    ],
+    "comments": "Via Real SK"
+  },
+  {
+    "id": 1764094873561,
+    "source": "Registration Fee",
+    "amount": 700,
+    "date": "2025-11-26",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Musfiqur Rahman Noyon"
   }
 ]
