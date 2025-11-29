@@ -1207,5 +1207,94 @@
             "Muammar Al Mujahid"
         ],
         "comments": "bkash"
+    },
+    {
+        "id": 1764437860019,
+        "source": "Registration Fee",
+        "amount": 800,
+        "date": "2025-11-29",
+        "type": "Registration",
+        "clients": [
+            "Arian Mollik Wasi"
+        ],
+        "comments": "Aminuzzaman"
+    },
+    {
+        "id": 1764437889916,
+        "source": "Registration Fee",
+        "amount": 500,
+        "date": "2025-11-29",
+        "type": "Registration",
+        "clients": [
+            "Sahariar Nafiz"
+        ],
+        "comments": "Farhan Shahariar"
+    },
+    {
+        "id": 1764437912599,
+        "source": "Registration Fee",
+        "amount": 500,
+        "date": "2025-11-29",
+        "type": "Registration",
+        "clients": [
+            "Sahariar Nafiz"
+        ],
+        "comments": "Md. Eashan"
+    },
+    {
+        "id": 1764437933522,
+        "source": "Registration Fee",
+        "amount": 600,
+        "date": "2025-11-29",
+        "type": "Registration",
+        "clients": [
+            "Sahariar Nafiz"
+        ],
+        "comments": "Mahim Rahman"
+    },
+    {
+        "id": 1764437956899,
+        "source": "Registration Fee",
+        "amount": 600,
+        "date": "2025-11-29",
+        "type": "Registration",
+        "clients": [
+            "Sahariar Nafiz"
+        ],
+        "comments": "Md. Morsalin Islam Likhon"
+    },
+    {
+        "id": 1764437994620,
+        "source": "Registration Fee",
+        "amount": 800,
+        "date": "2025-11-29",
+        "type": "Registration",
+        "clients": [
+            "Arian Mollik Wasi"
+        ],
+        "comments": "Md. Samiul Rahman"
+    },
+    {
+        "id": 1764438012084,
+        "source": "Registration Fee",
+        "amount": 800,
+        "date": "2025-11-29",
+        "type": "Registration",
+        "clients": [
+            "Arian Mollik Wasi"
+        ],
+        "comments": "Md. Salman Farsi"
+    },
+    {
+        "id": 1764438244372,
+        "source": "Sayem Biswas",
+        "amount": 10000,
+        "date": "2025-11-29",
+        "type": "Sponsor",
+        "clients": [
+            "Arian Mollik Wasi",
+            "Rafiu Tahrim"
+        ],
+        "comments": "for huzaifa's link lobbing"
     }
 ]
