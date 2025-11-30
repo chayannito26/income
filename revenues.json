@@ -1565,5 +1565,16 @@
             "asd"
         ],
         "comments": ""
+    },
+    {
+        "id": 1764530601078,
+        "source": "huzaifa",
+        "amount": 1500,
+        "date": "2025-11-30",
+        "type": "Sponsor",
+        "clients": [
+            "Arian Mollik Wasi"
+        ],
+        "comments": ""
     }
 ]
