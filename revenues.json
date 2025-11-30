@@ -1307,5 +1307,192 @@
       "Arian Mollik Wasi"
     ],
     "comments": "Tajkiya Islam Samiya"
+  },
+  {
+    "id": 1764490449458,
+    "source": "Registration Fee",
+    "amount": 900,
+    "date": "2025-11-30",
+    "type": "Registration",
+    "clients": [
+      "Tanzid Jayid"
+    ],
+    "comments": "Sagor Hossan"
+  },
+  {
+    "id": 1764490490473,
+    "source": "Registration Fee",
+    "amount": 1000,
+    "date": "2025-11-30",
+    "type": "Registration",
+    "clients": [
+      "Tanzid Jayid"
+    ],
+    "comments": "Arafat Hamim"
+  },
+  {
+    "id": 1764490504695,
+    "source": "Registration Fee",
+    "amount": 1000,
+    "date": "2025-11-30",
+    "type": "Registration",
+    "clients": [
+      "Tanzid Jayid"
+    ],
+    "comments": "Md. Golam Robbani"
+  },
+  {
+    "id": 1764490528680,
+    "source": "Registration Fee",
+    "amount": 600,
+    "date": "2025-11-30",
+    "type": "Registration",
+    "clients": [
+      "Tanzid Jayid"
+    ],
+    "comments": "Md. Showon Shaike"
+  },
+  {
+    "id": 1764490632266,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-30",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md. Arafat Hossain"
+  },
+  {
+    "id": 1764490650490,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-30",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md. Rasibul Hasan Rasib"
+  },
+  {
+    "id": 1764490671516,
+    "source": "Registration Fee",
+    "amount": 1200,
+    "date": "2025-11-30",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md. Tashfiq Imam Akkhor"
+  },
+  {
+    "id": 1764490697697,
+    "source": "Registration Fee",
+    "amount": 1000,
+    "date": "2025-11-30",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md. Rafiul Islam Apon"
+  },
+  {
+    "id": 1764490715032,
+    "source": "Registration Fee",
+    "amount": 1000,
+    "date": "2025-11-30",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Arindom Sarkar"
+  },
+  {
+    "id": 1764490728548,
+    "source": "Registration Fee",
+    "amount": 800,
+    "date": "2025-11-30",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Faekujjaman Rahat"
+  },
+  {
+    "id": 1764490747485,
+    "source": "Registration Fee",
+    "amount": 500,
+    "date": "2025-11-30",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md. Shiam Shah"
+  },
+  {
+    "id": 1764490826082,
+    "source": "Registration Fee",
+    "amount": 500,
+    "date": "2025-11-30",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Mir Shahidul Islam Omio"
+  },
+  {
+    "id": 1764490836243,
+    "source": "Registration Fee",
+    "amount": 500,
+    "date": "2025-11-30",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md. Mahfuzur Rahman"
+  },
+  {
+    "id": 1764490856081,
+    "source": "Registration Fee",
+    "amount": 500,
+    "date": "2025-11-30",
+    "type": "Registration",
+    "clients": [
+      "Arian Mollik Wasi"
+    ],
+    "comments": "Md. Jubayir Hosan"
+  },
+  {
+    "id": 1764490998658,
+    "source": "Registration Fee",
+    "amount": 500,
+    "date": "2025-11-30",
+    "type": "Registration",
+    "clients": [
+      "Marzia Mittika"
+    ],
+    "comments": "Sumaiya Afrin Oyshee"
+  },
+  {
+    "id": 1764491293381,
+    "source": "Registration Fee",
+    "amount": 1000,
+    "date": "2025-11-30",
+    "type": "Registration",
+    "clients": [
+      "Tanzid Jayid"
+    ],
+    "comments": "Rumon Islam"
+  },
+  {
+    "id": 1764491336284,
+    "source": "Registration Fee",
+    "amount": 900,
+    "date": "2025-11-30",
+    "type": "Registration",
+    "clients": [
+      "Tanzid Jayid"
+    ],
+    "comments": "Md. Ekram Malitha"
   }
 ]
