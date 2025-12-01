@@ -1994,5 +1994,18 @@
             "Wasi"
         ],
         "comments": ""
+    },
+    {
+        "id": 1764577218623,
+        "source": "Boga",
+        "amount": 4000,
+        "date": "2025-12-01",
+        "type": "Sponsor",
+        "clients": [
+            "Wasi",
+            "Maruf",
+            "Saruk"
+        ],
+        "comments": ""
     }
 ]
