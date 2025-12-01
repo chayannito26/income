@@ -1520,7 +1520,7 @@
     {
         "id": 1764526677901,
         "source": "Raju motors",
-        "amount": 1000,
+        "amount": 2000,
         "date": "2025-11-30",
         "type": "Sponsor",
         "clients": [
@@ -2091,31 +2091,6 @@
         "amount": 10000,
         "date": "2025-12-01",
         "type": "Sponsor",
-        "clients": [
-            "Wasi",
-            "Shezan"
-        ],
-        "comments": ""
-    },
-    {
-        "id": 1764618130591,
-        "source": "Food packet final",
-        "amount": 2000,
-        "date": "2025-12-01",
-        "type": "Lunch",
-        "clients": [
-            "Shafi",
-            "Smjr Abir",
-            "Kaif"
-        ],
-        "comments": ""
-    },
-    {
-        "id": 1764618177782,
-        "source": "Band Khawa",
-        "amount": 2000,
-        "date": "2025-12-01",
-        "type": "Band Hospitality",
         "clients": [
             "Wasi",
             "Shezan"
