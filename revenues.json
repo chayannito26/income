@@ -2096,5 +2096,27 @@
             "Shezan"
         ],
         "comments": ""
+    },
+    {
+        "id": 1764620628911,
+        "source": "Sonju",
+        "amount": 1000,
+        "date": "2025-12-01",
+        "type": "Sponsor",
+        "clients": [
+            "Arian Mollik Wasi"
+        ],
+        "comments": ""
+    },
+    {
+        "id": 1764623675242,
+        "source": "Unknown",
+        "amount": 30000,
+        "date": "2025-12-01",
+        "type": "Sponsor",
+        "clients": [
+            "Wasi"
+        ],
+        "comments": ""
     }
 ]
